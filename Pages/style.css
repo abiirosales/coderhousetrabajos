@@ -1,0 +1,330 @@
+/* Comentario CSS */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: #e85d04/* #ff8c61*/;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 45px;
+}
+
+h2{
+    text-align: center;
+    color: #e85d04;
+    margin-top: 30px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    width: 100%;
+    height: 30px;
+    background-color: #ffd0b0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+
+.menu li{
+    list-style: none; 
+    text-align: center;
+} 
+
+/*.menu li a:hover {
+    color: #ffdd00;
+}*/
+
+/*Box Modeling*/
+
+.padre-flex {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    background-color: beige;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    line-height: 50px;
+    /*text-decoration: none;*/
+ } 
+
+ #flexbox1 {
+     width: 80%;
+     margin: 0 auto;
+ }
+ .NGS {
+    display: inline-flex;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-right: 50px;
+    margin-left: 75px;
+    margin-bottom: 40px; 
+    background-color: beige;
+    width: 200px;
+    height: 200px;
+}
+
+.flexvisa {
+        display:block;
+        flex-direction:column;
+        justify-content: space-between;
+        align-content: space-evenly;
+        flex-wrap: nowrap;
+        margin-top: 40px;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        margin-left: 80px;
+        background-color: orange;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        line-height: 50px;
+}
+
+
+/*Fin de Box Modeling*/  
+
+nav {
+    color: rgb(80, 75, 75);
+    display: block;
+    position: relative;
+}
+
+h3{
+    color: #f48c06;
+    margin-top: 20px;
+}
+
+.grid {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content:center;
+}
+
+h4 {
+    padding:25px;
+    color:#ffba08;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    text-align: left;
+}
+
+table {
+    margin:10px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+.parallax{
+    background-image: url(../imagenes/operasidney.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:  cover;
+	height:30rem;
+	max-width: 100%;
+	position: relative
+}
+
+.video {
+    padding: 20px;
+}
+
+/*flex-direction: row;
+flex-wrap: nowrap; */
+
+/* Grids 2*/
+#grid-lyout {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto; 
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color:beige;
+    padding: 20px;
+    border: none;
+
+}
+.caja { 
+    background-color: rgb(250, 246, 246);
+    line-height: auto; 
+}
+
+.subtitulogrid {
+    text-align: left;
+}
+.c1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    text-align: center;
+    list-style: none; 
+    margin: 5px;
+    padding:5px;
+}
+
+.c3 {
+    grid-column: 1/4;
+}
+
+.c4{
+    grid-column: 1/2;
+}
+
+.c5 {
+    grid-column: 2/4;
+}
+
+.c6 {
+    grid-column: 1/4;
+}
+
+/*.c7 {
+    grid-column: 2/4;
+}*/
+
+
+ /*header {
+    grid-area: header;
+    justify-content: space-between;
+}
+footer {
+    grid-area: footer;
+    justify-content: center;
+}
+section {
+    grid-area: section;
+} 
+nav {
+    grid-area: nav;
+}
+aside {
+    grid-area: aside;
+}
+
+header, 
+footer, 
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#main, 
+section {
+    display: grid;
+} 
+
+@media screen and (min-width: 320px) {
+    #main {
+        grid-template-columns: auto;
+        grid-template-rows: 15% 10% auto 15%;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header" "nav" "section" "footer";
+    }
+
+    section {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 15px;
+        row-gap: 15px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+
+    aside, #menu, #imputHeader {
+        display: none;
+    }
+}*/
+
+@media screen and (min-width: 480px) {}
+
+@media screen and (min-width: 600px) {}
+
+@media screen and (min-width: 768px) {
+    .body {
+        background-color: #000000;
+    }
+}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1200px) {
+    #main {
+        grid-template-columns: 15% auto;
+        grid-template-rows: 15% 10% auto 15%;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
+    }
+
+    section {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        column-gap: 15px;
+        row-gap: 15px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+} 
+
+#imputNav, #menuBurger {
+    display: none;
+}
+
+/*nav {
+    display: flex;
+    justify-content: space-between;
+}*/
+
+#imputNav {
+    margin-left: 30px;
+}
+
+#menuBurger {
+    margin-right: 30px;
+}
