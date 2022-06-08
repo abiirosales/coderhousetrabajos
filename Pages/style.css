@@ -270,16 +270,15 @@ section {
 } */
 
 @media (min-width: 320px)and(max-width: 640px) {
-    
+
 }
 
 @media (min-width: 641px)and(max-width: 920px) {
-
+    
 }
 
-@
 
-@media (min-width:921px)and (max-width: 1200px) {
+@media (min-width:921px) {
     #main {
         grid-template-columns: 15% auto;
         grid-template-rows: 15% 10% auto 15%;
