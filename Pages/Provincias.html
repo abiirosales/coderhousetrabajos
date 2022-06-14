@@ -6,13 +6,18 @@
        <meta http-equiv="X-UA-Compatible" content="IE=edge">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>Proyecto CoderHouse</title>
+
+        <!--Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        
+        <!--Mi CSS-->
        <link rel="stylesheet" href="style.css" />
        <link
        rel="stylesheet"
        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
 
-    <body class="otrogrid">
+    <body id="main">
 <script src="js/wow.min.js"></script>
 <script>
     new WOW ().init();
@@ -20,23 +25,59 @@
 <div class="wow animate__animated animate__bounceOut"></div>
 </div>
        <header>
-        <nav class="provinciasgrid1 menu">
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="provincias.html">Provincias</a></li>
-                <li><a href="alojamiento.html">Alojamiento</a></li>
-                <li><a href="Empleo.html">Empleo</a></li>
-                <li><a href="visas.html">Visas</a></li>
-            </ul>
+        <div class="container-fluid">
+
+            <div class="row">
+
+        <nav id="menu">
+              <nav class="navbar bg-light fixed-top">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="../imagenes/mapa-de-australia.png" width="40" weight="30"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Buscador</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="provincias.html">Provincias</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="alojamiento.html">Alojamiento</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="empleo.html">Empleo</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="visas.html">Visas</a>
+                          </li>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
         </nav>
+    </div>
+    </div>
     </header>
 <main class="provinciasgrid2">
+
     <section>
+
+        <div class="container-fluid1">
+            <div class="row">
         <h1>Provincias de Australia</h1>
 
         <article id="flexbox">
             <h4>Nueva Gales del Sur (NGS)</h4>
-            <a <!--href="nueva-gales-valley.jpg"--><img src="../imagenes/nueva-gales-bombo1.jpg" class="animate__bounceOut NGS" > <img class="animate__bounceOut NGS" src="../imagenes/nueva-gales-parke-nacional.jpg"> <img class="animate__bounceOut NGS" src="../imagenes/nueva-gales-valley.jpg"><img class="animate__bounceOut NGS" src="../imagenes/nueva-gales-del-sur-nieve.jpg"></a>
+            
+           <a><img src="../imagenes/nueva-gales-bombo1.jpg" class="animate__bounceOut NGS" > <img class="animate__bounceOut NGS" src="../imagenes/nueva-gales-parke-nacional.jpg"> <img class="animate__bounceOut NGS" src="../imagenes/nueva-gales-valley.jpg"><img class="animate__bounceOut NGS" src="../imagenes/nueva-gales-del-sur-nieve.jpg"></a>
             <p>
                 Descubre pueblos históricos, cultura cosmopolita y montañas nevadas cerca de exuberantes parques nacionales. Encuentra tu lugar ideal para una escapada en el outback australiano, la ciudad, las montañas o la costa.
 
@@ -76,7 +117,9 @@
             <h4>Victoria (VIC)</h4>
             <h4>Australia Occidental (WA)</h4>
             
-    </article>   
+    </article> 
+            </div>
+            </div>  
      </section>
     </main>
 

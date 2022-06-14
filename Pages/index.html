@@ -6,59 +6,99 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Proyecto CoderHouse</title>
-        <link rel="shortcut icon" href="australia.png">
+        
+        <!--Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        
+        <!--Mi CSS-->
         <link rel="stylesheet" href="style.css" src="../imagenes/australia.png">
+        <link rel="shortcut icon" href="australia.png">
 
        <!--Forma interna nro  1-->
      </head>
 
      <body id="main">
          <header>
-            <nav class="menu">
-                <ul class="menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="visas.html">Visas</a></li>
-                    <li><a href="provincias.html">Provincias</a></li>
-                    <li><a href="alojamiento.html">Alojamiento</a></li>
-                    <li><a href="empleo.html">Empleo</a></li>
-                </ul>
-                <div class="hamburguesa">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <input id="inputNav" type="search" placeholder="Buscar...">
-                <i id="menuBurger" class="fa fa-bars"></i>
-            </nav>
-        </header>
+            <div class="container-fluid">
 
-        <hr>
+                <div class="row">
+
+            <nav id="menu">
+                  <nav class="navbar bg-light fixed-top">
+                      <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html"><img src="../imagenes/mapa-de-australia.png" width="40" weight="30"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                          <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Buscador</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="provincias.html">Provincias</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="alojamiento.html">Alojamiento</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="empleo.html">Empleo</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="visas.html">Visas</a>
+                              </li>
+                          </div>
+                        </div>
+                      </div>
+                    </nav>
+            </nav>
+        </div>
+
+        <div class="row">
+
         <div class="parallax opera-sidney" id="m">     
             <div class="texto-interior">
                 <h1 id="m">Vivir en Australia</h1>
-               <!-- <input id="inputHeader" type="search" placeholder="Buscar...">-->
-
             </div>
-        </div>   
+        </div> 
+
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
          </style>
+         </div>
 
-         <section>
+        </div>
+        </header>
+
+        <section>
+
+            <div class="container-fluid1">
+                <div class="row">
 
             <h2>Provincias de Australia</h2>
-            <article id="flexbox1">
+
+            <div class="grid" style="--bs-gap: .25rem 1rem;">
+                <div class="g-col-4 g-col-sm-4 g-col-md-4 g-col-lg-4 g-col-xl-6 padre-flex"><a href="./Provincias.html">Nueva Gales del Sur (NGS)</a></div>
+                <div class="g-col-4 g-col-sm-4 g-col-md-4 g-col-lg-4 g-col-xl-6 padre-flex"><a href="./Provincias.html">Queensland (QLD)</a></div>
+              
+                <div class="g-col-4 g-col-sm-4 g-col-md-4 g-col-lg-4 g-col-xl-6 padre-flex"><a href="./Provincias.html">Australia Meridional (SA)</a></div>
+                <div class="g-col-4 g-col-sm-4 g-col-md-6 g-col-lg-4 g-col-xl-6 padre-flex"><a href="./Provincias.html">Victoria (VIC)</a></div>
+
+                <div class="g-start-4 g-col-sm-4 g-col-md-4 g-col-lg-4 g-col-xl-6 padre-flex" style="grid-row: 2"><a href="./Provincias.html">Australia Occidental (WA)</a></div>
+              </div>
+           <!-- <article id="flexbox1">
                 <div class="padre-flex"><a href="./Provincias.html">Nueva Gales del Sur (NGS)</a></div>
                 <div class="padre-flex"><a href="./Provincias.html">Queensland (QLD)</a></div>
                 <div class="padre-flex"><a href="./Provincias.html">Australia Meridional (SA)</a></div>
                 <div class="padre-flex"><a href="./Provincias.html">Victoria (VIC)</a></div>
                 <div class="padre-flex"><a href="./Provincias.html">Australia Occidental (WA)</a></div>
-        </article>
-
-    </article>   
-         </section>
+        </article> -->
+        </div>
 
         <main>
          <section class="australia">
@@ -68,19 +108,65 @@
              <article class="PrimerosPasos">
                  <div>
                      <h3>¿Que hacer apenas llegas a Australia?</h3>
-                     <nav class="grid" style="color: rgb(80, 75, 75);">
-                         <section class="grid">
-                             <div>Comprar chip para el telefono</div>
-                             <!--<p>Texto</p>-->
-                             <div>Cambiar el dinero a moneda local</div>
-                             <!--<p>Texto</p>-->
-                             <div>Sacar el Tax File Number (TFN)</div>
-                             <!--<p>Texto</p>-->
-                             <div>Crearse una cuenta bancaria</div>
-                             <!--<p>Texto</p>-->
-                         </section>
-                        
-                     </nav>
+
+                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+                      <div class="col">
+                        <div class="card">
+                          <img src="../imagenes/chip-telefono.jpg" class="card-img-top" height="150" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Comprar chip para el telefono</h5>
+                            <p class="card-text">Es recomendable comprar el chip apenas se aterrize en el aeropuerto de Australia. Los chips  se consiguen a menos costo que en lla ciudad, e  inncluso muchas veces hay ofertas de todo tipo. La compañía más recomendada es VODAFONE. Te funciona en toda Australia y puede llegar a costar aproximadamente 30$ p/mes un buen plan, con unos 10GBpara consumir.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <img src="../imagenes/dolar-australiano.jpg" class="card-img-top" height="150" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Cambiar el dinero a moneda local</h5>
+                            <p class="card-text">El dólar australiano (código AUD) es la moneda oficial de la Mancomunidad de Australia, incluidos los Territorios Antárticos Australianos, la Isla de Navidad, las Islas Cocos, Islas Heard y McDonald e Isla Norfolk, así como de los estados independientes del Pacífico de Kiribati, Nauru y Tuvalu.
+                              Conversión de dolar australiano a Euro: 1,00 Dólar australiano =0,66 Euro </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <img src="../imagenes/tax-file-number.jpg" class="card-img-top" height="150" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Sacar el Tax File Number (TFN)</h5>
+                            <p class="card-text">
+                              TFN es la sigla para Tax File Number. Se trata de un número único, que será tu referencia personal ante la oficina de impuestos de Australia.
+                              La aplicación se realiza de manera ONLINE, a través de la página de la ATO (Australian Taxation Office), tienen que completar el formulario online de aplicación para obtener el TFN y esperar a que les llegue vía mail o por correo postal.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <img src="../imagenes/cuenta-bancaria.jpg" class="card-img-top" height="150" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Crearse una cuenta bancaria</h5>
+                            <p class="card-text">Es muy útil poder abrir una cuenta bancaria en Australia a tu nombre y antes de tu llegada para evitar llevar dinero en efectivo, teniendo así tranquilidad y todo organizado de antemano.
+                              Los cuatro bancos principales en Australia para crear una cuenta bancaria son:
+
+                              Commonwealth Bank (CBA),
+                              National Australia Bank (NAB),
+                              Australia y Nueva Zelanda Banking Group (ANZ)
+                              Westpac (WBC)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!--<div class="container">
+                        <div class="row row-cols-2">
+                          <div class="col">Comprar chip para el telefono</div>
+                          <div class="col">Cambiar el dinero a moneda local</div>
+                          <div class="col">Sacar el Tax File Number (TFN)</div>
+                          <div class="col">Crearse una cuenta bancaria</div>
+                        </div>
+                      </div>-->
                  </div>
              </article>
                  <article class="Viviendas">
@@ -97,20 +183,31 @@
                  <article class="Buscar trabajo">
                      <div>
                          <h3>Busqueda de empleo</h3>
+                         <!--Consejos,tips-->
                          <p>Texto</p>
                      </div>
-                 </article>
+                 </article>                              
+                </section>
 
-        </section>
         </main>
+            </div>
+        </section>
 
         <footer>
+            <div class="container-fluid1">
+                <div class="row">
             <h3 class="video">Emigrar a otro Continente</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/NAqakphYi8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <a href="./index/inicio/contacto/Aplicaciones/Nosotros/Provincias/Contacto.html"><img src="imagen de instagram.jpg" width="25" heigth="25"></a>
-
+            <a href="../imagenes/imagen de instagram.jpg"><img src="imagen de instagram.jpg" width="25" heigth="25"></a>
+                </div>
+            </div>
         </footer>
-     </body>
+
+        <!--Boostrap JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+    </body>
+    
  </html>
 
 

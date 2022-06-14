@@ -33,14 +33,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.menu{
+.container-fluid {
+    background-color: #fbc4ab;
+    --bs-gutter-x: 0;
+ }
+
+ .navbar {
+    --bs-navbar-padding-y: 0;
+ }
+
+ .offcanvas {
+    background-color: #fff9ec;
+ }
+
+#menu{
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 15px;
     width: 100%;
-    height: 30px;
-    background-color: #ffd0b0;
+    height: 55px;
 }
 
 .menu li a {
@@ -52,11 +64,13 @@ body {
 .menu li{
     list-style: none; 
     text-align: center;
-} 
+}
 
-/*.menu li a:hover {
-    color: #ffdd00;
-}*/
+.row {
+    margin-left:0;
+    margin-right:0;
+    margin-top:0;
+}
 
 /*Box Modeling*/
 
@@ -76,13 +90,8 @@ body {
     height: 130px;
     text-align: center;
     line-height: 50px;
-    /*text-decoration: none;*/
  } 
 
- #flexbox1 {
-     width: 80%;
-     margin: 0 auto;
- }
  .NGS, .QLD, .SA {
     display: inline-flex;
     justify-content: space-around;
@@ -170,8 +179,8 @@ table {
 	position: relative;
 }
 
-#m {
-    padding-top: none;
+.texto-interior {
+    padding-top: 2%;
 }
 
 .video {
@@ -183,7 +192,7 @@ flex-wrap: nowrap; */
 
 /* Grids 2*/
 
-.grid {
+/*.grid {
     margin-top: 10px;
     display: grid;
     grid-template-columns: auto auto;
@@ -191,7 +200,7 @@ flex-wrap: nowrap; */
     align-items: center;
     justify-content: space-evenly;
     align-content:center;
-}
+} */
 
 
 #grid-lyout {
@@ -242,7 +251,7 @@ flex-wrap: nowrap; */
 
 /*GRID PROVINCIAS, ALOJAMIENTO*/
 
-.otrogrid {
+/*.otrogrid {
     outline: 4px solid white;
     width: 100%;
     height: auto;
@@ -251,23 +260,7 @@ flex-wrap: nowrap; */
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:auto;
-}
-
-/*.provinciasgrid1, .gridalojamiento1 {
-
-}
-.provinciasgrid2, .gridalojamiento2 {
-
-}
-
-.provinciasgrid3, .gridalojamiento3 {
-
 }*/
-
-/*#main, 
-section {
-    display: grid;
-} */
 
 @media (min-width: 320px)and(max-width: 640px) {
 
@@ -275,36 +268,4 @@ section {
 
 @media (min-width: 641px)and(max-width: 920px) {
     
-}
-
-
-@media (min-width:921px) {
-    #main {
-        grid-template-columns: 15% auto;
-        grid-template-rows: 15% 10% auto 15%;
-        column-gap: 10px;
-        row-gap: 10px;
-        grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
-    }
-
-    section {
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
-        column-gap: 15px;
-        row-gap: 15px;
-        justify-items: stretch;
-        align-items: stretch;
-    }
-} 
-
-#imputNav, #menuBurger {
-    display: none;
-}
-
-#imputNav {
-    margin-left: 30px;
-}
-
-#menuBurger {
-    margin-right: 30px;
 }
