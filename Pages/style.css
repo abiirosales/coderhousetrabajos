@@ -5,42 +5,38 @@
   padding: 0;
 }*/
 h1 {
-  color: #e85d04;
+  color: #284b63;
   text-align: center;
-  font-family: "Heebo", sans-serif;
+  font-family: 'Heebo', sans-serif;
   font-size: 45px;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-name: aparecer;
-          animation-name: aparecer;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
 }
 
 h2 {
   text-align: center;
-  color: #dc2f02;
-  margin-top: 50px;
+  color: #284b63;
+  padding-top: 2cm;
 }
 
 h3 {
-  color: #f48c06;
+  color: #284b63;
   margin-top: 20px;
+  text-align: center;
+  padding-bottom: 2%;
 }
 
-h4 {
+h4, h5 {
   padding: 25px;
-  color: #ffba08;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #284b63;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@-webkit-keyframes aparecer {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+h6 {
+  color: #284b63;
+  padding-top: 1cm;
+  padding-bottom: 1cm;
 }
 
 @keyframes aparecer {
@@ -51,17 +47,19 @@ h4 {
     opacity: 1;
   }
 }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .container-fluid {
-  background-color: #fbc4ab;
   --bs-gutter-x: 0;
+  background-color: #f1dbce;
 }
 
 .navbar {
   --bs-navbar-padding-y: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .offcanvas {
@@ -69,6 +67,7 @@ body {
 }
 
 #menu {
+  background-color: #f1dbce;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -94,6 +93,14 @@ body {
   margin-top: 0;
 }
 
+.espacioAus {
+  margin-right: 5%;
+}
+
+.card2 {
+  margin-top: 1cm;
+}
+
 /*Box Modeling*/
 .padre-flex {
   display: inline-flex;
@@ -112,7 +119,7 @@ body {
   line-height: 50px;
 }
 
-.NGS, .QLD, .SA {
+.NGS, .QLD, .SA, .VIC, .WA {
   display: inline-flex;
   justify-content: space-around;
   align-content: space-around;
@@ -123,6 +130,10 @@ body {
   width: 200px;
   height: 200px;
   /*animación*/
+}
+
+.img-fluid {
+  margin-left: 400px;
 }
 
 .flexvisa {
@@ -155,14 +166,50 @@ p {
   text-align: center;
 }
 
+.buscarTrabajo {
+  padding-top: 2cm;
+}
+
+.Viviendas {
+  padding-top: 2cm;
+}
+
+.espacio {
+  padding-bottom: 2%;
+}
+
+.texto {
+  text-align: left;
+}
+
+.rounded {
+  margin-right: 2px;
+}
+
+.float-center {
+  margin-left: 15%;
+}
+
+.float-start {
+  margin-left: 5%;
+}
+
+.float-end {
+  margin-right: 5%;
+}
+
 /*SASS 1*/
+.table-striped {
+  width: 80%;
+}
+
 table, .newTable {
   margin: 10px;
   margin-left: 5%;
   margin-top: 20px;
   border: 1px solid #023047;
   border-collapse: collapse;
-  width: 90%;
+  width: 70%;
 }
 
 table th, .newTable th {
@@ -172,7 +219,7 @@ table th, .newTable th {
   border: 1px solid #023047;
   border-collapse: collapse;
   color: #013a63;
-  width: 90%;
+  width: 70%;
   text-align: left;
   padding: 10px;
 }
@@ -183,7 +230,7 @@ table td, .newTable td {
   margin-top: 20px;
   border: 1px solid #023047;
   border-collapse: collapse;
-  width: 90%;
+  width: 70%;
   padding: 10px;
 }
 
@@ -210,17 +257,17 @@ table td, .newTable td {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto auto auto auto;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   margin-bottom: 0px;
   margin-top: 0px;
-  background-color: beige;
-  padding: 20px;
+  background-color: #efdebe;
+  padding: 35px;
   border: none;
 }
 
 .caja {
-  background-color: #faf6f6;
+  background-color: #ffff;
   line-height: auto;
 }
 
@@ -255,8 +302,8 @@ footer {
 
 @media (max-width: 600px) {
   .padre-flex {
-    width: 86.6666666667px;
-    height: 86.6666666667px;
+    width: 86.66667px;
+    height: 86.66667px;
     font-size: 10px;
     display: inline-flex;
     flex-direction: row;
@@ -269,17 +316,17 @@ footer {
     text-align: center;
     line-height: 50px;
   }
+  .NGS, .QLD, .SA, .VIC, .WA {
+    width: 100px;
+    height: 100px;
+    margin-right: 50px/2;
+    margin-left: 75px/2;
+    margin-bottom: 40px/2;
+  }
+}
 
-  .NGS, .QLD, .SA {
-    width: 100px;
-    height: 100px;
-    margin-right: 50px/2;
-    margin-left: 75px/2;
-    margin-bottom: 40px/2;
-  }
-}
 @media (max-width: 678px) {
-  .NGS, .QLD, .SA {
+  .NGS, .QLD, .SA, .VIC, .WA {
     width: 100px;
     height: 100px;
     margin-right: 50px/2;
@@ -287,6 +334,7 @@ footer {
     margin-bottom: 40px/2;
   }
 }
+
 @media (max-width: 1200px) {
   .row-cols-md-2 > * {
     flex: 0 0 auto;
@@ -294,6 +342,7 @@ footer {
     font-size: 10px;
   }
 }
+
 .seek {
   background-color: #d5bdaf;
 }
@@ -316,4 +365,4 @@ footer {
 
 .flexvisa {
   font-weight: bold;
-}/*# sourceMappingURL=style.css.map */
+}
