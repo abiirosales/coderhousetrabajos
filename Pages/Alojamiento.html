@@ -11,7 +11,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
         <!--Mi CSS-->
-       <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="../css/style.css">
 
        <meta name="keywords" content="AUSTRALIA, ALOJAMIENTO AUSTRALIA, HOSTELS, PRIMER ALOJAMIENTO">
        <meta name="description" content="Primer alojamiento australiano, Recomendaciones y aplicaciones, Tipos de alojamiento, Costos aproximados">
@@ -26,7 +26,7 @@
 
             <div class="row">
 
-        <nav id="menu">
+        <nav>
               <nav class="navbar bg-light fixed-top">
                   <div class="container-fluid">
                     <a class="navbar-brand" href="../index.html"><img src="../imagenes/mapa-de-australia.png" width="40" weight="30"></a>
@@ -38,13 +38,12 @@
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Buscador</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                       </div>
+
+                      <!--ANIDACIÓN DIV-UL-LI-A-->
                       <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                          <!--<li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                          </li>-->
                           <li class="nav-item">
-                            <a class="nav-link" href="provincias.html">Provincias</a>
+                            <a class="nav-link" href="Provincias.html">Provincias</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="alojamiento.html">Alojamiento</a>
@@ -55,6 +54,7 @@
                           <li class="nav-item">
                             <a class="nav-link" href="visas.html">Visas</a>
                           </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -65,10 +65,14 @@
     </div>
         </nav>
     </header>
-
-<main class="gridalojamiento2">
+    
+     <!--COMIENZA EL MAIN-->
+    <main class="gridalojamiento2">
+      
     <h1>Alojamiento</h1>
+
     <section class="container">
+
             <article>
                 <h4>Primer alojamiento australiano</h4>
                 <p>Hostel, los hostels o backpackers son los típicos albergues de mochileros y gente joven que está de paso por la ciudad. Son sin duda la opción más económica a tu llegada y te permite conocer gente joven con la que te puede relacionar nada más llegar a Australia.</p>
@@ -88,10 +92,12 @@
                 <p>Estos son alojamientos temporales, para salir del paso hasta que encuentres un piso definitivo aquí en Australia. Encontrar un piso a distancia antes de llegar a Australia también es una opción, aunque tendrás que pagar una fianza de una habitación que nunca has visto en directo, así que ten cuidado. </p>
 
                 <h4>Recomendaciones y aplicaciones</h4>
-                <div class="card">
+                <div class="card card3">
                   <div class="card-header">
                     Información importante
                   </div>
+
+                  <!--ANIDACIÓN DIV-H5-P-A-->
                   <div class="card-body">
                     <h5 class="card-title">Recomendaciones para tu primer alojamiento</h5>
                     <p class="card-text">12 CONSEJOS PARA BUSCAR ALOJAMIENTO.
@@ -99,8 +105,9 @@
                     <a href="https://gostudyaus.es/blog/8-consejos-para-buscar-alojamiento-en-australia/" class="btn btn-outline-warning">Acceder al link</a>
                   </div>
                 </div>
-                <div class="d-flex justify-content-evenly">
+                <div class=" justify-content-evenly">
                   
+                  <!--ANIDACIÓN DIV-IMG-DIV-H5-P-A-->
                   <div class="card card2" style="width: 18rem;">
                   <img src="../imagenes/flatmates.png" class="card-img-top" alt="...">
                   <div class="card-body">
@@ -214,9 +221,10 @@
                 
             </article>
     </section>
-</main>
-
-<footer class="bg-light text-withe">
+  </main>
+  
+   <!--COMIENZA EL FOOTER-->
+  <footer class="bg-light text-withe">
   <div class="container">
     <nav class="row">
       <a
@@ -227,8 +235,7 @@
       src="../imagenes/mapa-de-australia.png" width="40" weight="30"
       alt="Mapa de Australia"
       class="img-log mr-2 espacioAus"
-      >
-      Australia</a>
+      ></a>
       <ul class="col-3 list-unstyled">
         <li class="font-weight-bold text-uppercase">Términos y condiciones</li>
         <li><a href="#" class="text-reset">Privacidad</a></li>

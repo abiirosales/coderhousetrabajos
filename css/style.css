@@ -12,7 +12,7 @@ h1 {
   animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: infinite;
-  margin-top: 1cm;
+  margin-top: 2cm;
   margin-bottom: 1cm;
 }
 
@@ -20,7 +20,7 @@ h2 {
   text-align: center;
   color: #284b63;
   padding-top: 2cm;
-  margin-top: 1cm;
+  margin-top: cm;
 }
 
 h3 {
@@ -34,7 +34,7 @@ h4, h5 {
   padding: 25px;
   color: #284b63;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-top: 2cm;
+  margin-top: 1cm;
 }
 
 h6 {
@@ -237,7 +237,7 @@ main {
   width: 80%;
 }
 
-table, .newTable {
+table {
   margin: 10px;
   margin-left: 5%;
   margin-top: 20px;
@@ -246,7 +246,7 @@ table, .newTable {
   width: 70%;
 }
 
-table th, .newTable th {
+table th {
   margin: 10px;
   margin-left: 5%;
   margin-top: 20px;
@@ -258,7 +258,7 @@ table th, .newTable th {
   padding: 10px;
 }
 
-table td, .newTable td {
+table td {
   margin: 10px;
   margin-left: 5%;
   margin-top: 20px;
@@ -335,6 +335,9 @@ footer {
 }
 
 @media (max-width: 600px) {
+  p {
+    font-size: small;
+  }
   .padre-flex {
     width: 86.66667px;
     height: 86.66667px;
@@ -353,9 +356,142 @@ footer {
   .NGS, .QLD, .SA, .VIC, .WA {
     width: 100px;
     height: 100px;
-    margin-right: 50px/2;
-    margin-left: 75px/2;
+    margin-right: 0px;
+    margin-left: 45px;
     margin-bottom: 40px/2;
+  }
+  #flexbox {
+    width: 100%;
+  }
+  footer {
+    font-size: 7.5px;
+  }
+  .list-unstyled {
+    padding-left: 1px;
+  }
+  .text-withe {
+    height: 50%;
+  }
+  /*MODIFICACION CARD PRIMERSO PASOS*/
+  .card {
+    width: 140%;
+    height: 100%;
+    margin-left: 0;
+    --bs-card-spacer-y: 0rem;
+    padding-right: 0cm;
+  }
+  .col {
+    padding-right: 0.7cm;
+    padding-top: 0.8cm;
+  }
+  .card-body {
+    margin-top: 0%;
+    padding-right: 0cm;
+  }
+  .col-sm-6 {
+    padding-right: 3cm;
+    padding-left: 1.5cm;
+  }
+  .card-img-top {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0cm;
+    padding-bottom: none;
+  }
+  .card-title {
+    font-size: 8px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  .card-text {
+    font-size: 8.5px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-right: 0.3cm;
+    padding-top: none;
+    padding-bottom: 0.3cm;
+  }
+  /*CARD ALOJAMIENTO APPS*/
+  .card2 {
+    width: 10rem;
+    margin-left: 0.75cm;
+  }
+  /*card info importn.*/
+  .card3 {
+    width: 100%;
+    padding-left: 0.5cm;
+  }
+  /*css fotos Empleo*/
+  .rounded {
+    width: 200px;
+    height: 150px;
+    padding-top: 2%;
+  }
+  .espacioFoto {
+    padding-top: 4cm;
+  }
+  /*INDEX LINK A PROVINCIAS*/
+  .linkProv {
+    padding-left: 1cm;
+  }
+  /*APPS EMPLEO CARD*/
+  .appsEmpleo {
+    padding-bottom: 0.6cm;
+  }
+  #grid-lyout {
+    display: inline-block;
+    grid-template-columns: 100% center;
+    grid-template-rows: auto;
+    padding: none;
+    width: 0%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .flexvisa {
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-evenly;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    background-color: #ddb892;
+    width: 170px;
+    height: 100px;
+    text-align: center;
+    line-height: 50px;
+  }
+  .c1 {
+    grid-column: 1/1;
+    width: 8cm;
+  }
+  .c2 {
+    grid-column: 1/1;
+    width: 8cm;
+  }
+  .c3 {
+    grid-column: 1/1;
+    width: 8cm;
+  }
+  .c4 {
+    grid-column: 1/1;
+    width: 8cm;
+  }
+  .c5 {
+    grid-column: 1/1;
+    width: 8cm;
+  }
+  .c6 {
+    grid-column: 1/1;
+    width: 8cm;
+  }
+  /*TABLAS DE VISAS*/
+  table {
+    width: 8cm;
   }
 }
 
